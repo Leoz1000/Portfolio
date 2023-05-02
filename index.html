@@ -69,6 +69,20 @@
 
         <!--==================== MAIN ====================-->
         <main class="main">
+
+            <!--==================== MODAL ====================-->
+
+
+            <section class="modal deactivate-modal" id="section-modal">
+                <span class="deactivate-modal" id="overlay"></span>
+
+                <div class="contact__modal deactivate-modal" id="modal">
+                    <h2 class="modal__title">Contact Me</h2>
+                    <p class="modal__text">Email: leonardoleonardi2602@gmail.com</p>
+                    <a href="mailto:leonardoleonardi2602@gmail.com" class="button button--flex">Send Email</a>
+                </div>
+            </section>
+            
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
                 <div class="home__container container grid">
@@ -98,7 +112,7 @@
                             <h3 class="home__subtitle"><span class="multitext"></span></h3>
                             <p class="home__description">Experience in web development knowledge.
                             </p>
-                            <a href="#contact" class="button button--flex">
+                            <a href="#contact" class="button button--flex" id="contact-modal">
                                 Contact Me <i class="uil uil-message button__icon"></i>
                             </a>
                         </div>
@@ -149,8 +163,8 @@
                     </div>
                     -->
                     <div class="about__buttons">
-                        <a href="#" target="_blank" class="button button--flex">
-                            Contact Me<i class="uil uil-download-alt button__icon"></i>
+                        <a href="#contact" class="button button--flex" id="contact-modal1">
+                            Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>

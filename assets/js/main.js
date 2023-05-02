@@ -1,3 +1,40 @@
+/*==================== MODAL ====================*/
+
+const contactButton = document.getElementById('contact-modal'),
+      contactButton1 = document.getElementById('contact-modal1'),
+      modal = document.getElementById('modal'),
+      sectionModal = document.getElementById('section-modal'),
+      overlay = document.getElementById('overlay')
+
+if(contactButton){
+    contactButton.addEventListener('click', ()=>{
+        modal.classList.add('active-modal')
+        modal.classList.remove('deactivate-modal')
+        sectionModal.classList.add('active-modal')
+        sectionModal.classList.remove('deactivate-modal')
+        overlay.classList.add('overlay')
+        overlay.classList.remove('deactivate-modal')
+    })        
+}
+if(contactButton1){
+    contactButton1.addEventListener('click', ()=>{
+        modal.classList.add('active-modal')
+        modal.classList.remove('deactivate-modal')
+        sectionModal.classList.add('active-modal')
+        sectionModal.classList.remove('deactivate-modal')
+        overlay.classList.add('overlay')
+        overlay.classList.remove('deactivate-modal')
+    })      
+}
+overlay.addEventListener('click', ()=>{
+    modal.classList.add('deactivate-modal')
+    modal.classList.remove('active-modal')
+    sectionModal.classList.add('deactivate-modal')
+    sectionModal.classList.remove('active-modal')
+    overlay.classList.add('deactivate-modal')
+    overlay.classList.remove('overlay')
+}) 
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle =document.getElementById('nav-toggle'),
