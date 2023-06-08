@@ -73,15 +73,15 @@
             <!--==================== MODAL ====================-->
 
 
-            <div class="modal deactivate-modal" id="section-modal">
+            <section class="modal deactivate-modal" id="section-modal">
                 <span class="deactivate-modal" id="overlay"></span>
 
                 <div class="contact__modal deactivate-modal" id="modal">
                     <h2 class="modal__title">Contact Me</h2>
-                    <p class="modal__text">Email: leonardoleonardi2602@gmail.com</p>
+                    <p class="modal__text">EMAIL: leonardoleonardi2602@gmail.com</p>
                     <a href="mailto:leonardoleonardi2602@gmail.com" class="button button--flex">Send Email</a>
                 </div>
-            </div>
+            </section>
             
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
@@ -108,9 +108,9 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Leo</h1>
-                            <h3 class="home__subtitle"><span class="multitext"></span></h3>
-                            <p class="home__description">Experience in web development knowledge.
+                            <p class="home__subtitle">Hello There, My name is <span class="name"><strong>Leo</strong></span></p>
+                            <h3 class="home__title"><span class="multitext"></span></h3>
+                            <p class="home__description">I create beautiful, high-performing websites
                             </p>
                             <a href="#contact" class="button button--flex" id="contact-modal">
                                 Contact Me <i class="uil uil-message button__icon"></i>
@@ -121,8 +121,6 @@
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
                         </a>
                     </div>
 
@@ -140,7 +138,7 @@
                     -->
                     <div class="about__data">
                         <p class="about__description">My name is Leonardo Leonardi, I am web developer with preference in front-end. 
-                            To develop web app I mainly use: React Js, typescript, Tailwind CSS, Bootstrap and Blueprint for front-end. 
+                            To develop web app I mainly use: Html, Css and JavaScript or React Js, typescript, Tailwind CSS, Bootstrap and Blueprint for front-end. 
                             For the back-end I use: PHP, Node.js, FireBase, MongoDB and standard MySQL.
                         </p>
                     </div>
@@ -463,6 +461,9 @@
 
                     <ul class="footer__links">
                         <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li>
                             <a href="#about" class="footer__link">About</a>
                         </li>
                         <li>
@@ -494,7 +495,7 @@
         <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
         <script>
             var typingEffect = new Typed(".multitext",{
-                strings : ["Web Developer","Front-End Developer"],
+                strings : ["Web Dev","Front-End"],
                 loop : true,
                 typeSpeed: 100,
                 backSpeed: 80,
