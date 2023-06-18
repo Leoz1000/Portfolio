@@ -2,6 +2,8 @@
 
 const contactButton = document.getElementById('contact-modal'),
       contactButton1 = document.getElementById('contact-modal1'),
+      contactButton2 = document.getElementById('contact-modal2'),
+      contactButton3 = document.getElementById('contact-modal3'),
       modal = document.getElementById('modal'),
       sectionModal = document.getElementById('section-modal'),
       overlay = document.getElementById('overlay')
@@ -18,6 +20,26 @@ if(contactButton){
 }
 if(contactButton1){
     contactButton1.addEventListener('click', ()=>{
+        modal.classList.add('active-modal')
+        modal.classList.remove('deactivate-modal')
+        sectionModal.classList.add('active-modal')
+        sectionModal.classList.remove('deactivate-modal')
+        overlay.classList.add('overlay')
+        overlay.classList.remove('deactivate-modal')
+    })      
+}
+if(contactButton2){
+    contactButton2.addEventListener('click', ()=>{
+        modal.classList.add('active-modal')
+        modal.classList.remove('deactivate-modal')
+        sectionModal.classList.add('active-modal')
+        sectionModal.classList.remove('deactivate-modal')
+        overlay.classList.add('overlay')
+        overlay.classList.remove('deactivate-modal')
+    })      
+}
+if(contactButton3){
+    contactButton3.addEventListener('click', ()=>{
         modal.classList.add('active-modal')
         modal.classList.remove('deactivate-modal')
         sectionModal.classList.add('active-modal')
@@ -102,14 +124,14 @@ let swiper = new Swiper('.portfolio__container',{
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
-    const scrollY = window.pageYOffset
-
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        console.log(sectionHeight, sectionTop, sectionId)
+
+        if(window.scrollY > sectionTop && window.scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
