@@ -195,6 +195,7 @@ img {
   align-items: center;
 }
 
+
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
@@ -308,7 +309,7 @@ img {
   transition: 0.4s;
 }
 
-.home__social-icon:hover {
+.social__icon:hover {
   border: 1px solid var(--first-color);
   border-radius: 100%;
   background-color: var(--first-color);
@@ -316,10 +317,10 @@ img {
 }
 
 .social__icon{
-  margin-top: 0.8px;
   width: 30px;
   height: 30px;
-  margin-left: 4.4px;
+  padding-left: 4.4px;
+  padding-top: 1px;
 }
 
 .home__blob {
@@ -847,6 +848,9 @@ img {
   .qualification__data {
     gap: 0.5rem;
   }
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* For medium devices */
@@ -878,7 +882,7 @@ img {
   /*Insert about container when i add img */
   .portfolio__content,
   .footer__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .skills__container {
     margin-left: var(--mb-3);
