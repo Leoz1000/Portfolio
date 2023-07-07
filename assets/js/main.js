@@ -129,8 +129,6 @@ function scrollActive(){
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        console.log(sectionHeight, sectionTop, sectionId)
-
         if(window.scrollY > sectionTop && window.scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
