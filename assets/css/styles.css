@@ -517,7 +517,7 @@ img {
   font-weight: var(--font-bold);
 }
 
-.skills__html {
+.skills__typescript {
   width: 90%;
 }
 .skills__css {
@@ -527,27 +527,27 @@ img {
   width: 70%;
 }
 .skills__react {
-  width: 50%;
+  width: 70%;
 }
 .skills__angular {
-  width: 50%;
+  width: 90%;
 }
 .skills__php {
   width: 50%;
 }
 
-.skills__spring {
-  width: 40%;
+.skills__nest {
+  width: 90%;
 }
 
 .skills__mongo {
-  width: 50%;
+  width: 90%;
 }
-.skills__node {
-  width: 30%;
+.skills__MySql {
+  width: 90%;
 }
-.skills__firebase {
-  width: 50%;
+.skills__Express {
+  width: 90%;
 }
 
 .skills__close .skills__list {
